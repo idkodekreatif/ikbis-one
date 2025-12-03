@@ -1,0 +1,173 @@
+.hero-video {
+  position: relative;
+  padding: 160px 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Fallback Image */
+.hero-bg-image {
+  background: url("../ikbis/img/gedung-ikbis.jpeg") center/cover no-repeat;
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+}
+
+/* Overlay */
+.hero-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-actions a {
+  margin: 0 10px;
+}
+
+.hero-stats {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero-bg-video {
+    display: none;
+  } /* video dinonaktifkan di mobile */
+}
+
+.prodi-tabs.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  border-bottom: none;
+}
+
+.prodi-tabs .nav-item {
+  flex: 0 0 calc(33.333% - 15px);
+  text-align: center;
+}
+
+.prodi-tabs .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f8f9fa;
+  padding: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid #dee2e6;
+}
+
+.prodi-tabs .nav-link:hover {
+  background: #e9ecef;
+  transform: translateY(-3px);
+}
+
+.prodi-tabs .nav-link.active {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.prodi-tabs .tab-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.prodi-tabs .tab-content h5 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.prodi-tabs .tab-content span {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.prodi-tabs .nav-link.active span {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .prodi-tabs .nav-item {
+    flex: 0 0 calc(50% - 10px); /* jadi 2 kolom di mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .prodi-tabs .nav-item {
+    flex: 0 0 100%; /* jadi 1 kolom di layar kecil */
+  }
+}
+
+/* CTA Button Custom Color */
+.cta-button {
+  background-color: #00a19e;
+  color: #fff !important;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #008c8a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 161, 158, 0.3);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(0, 161, 158, 0.1);
+  color: #00a19e;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #00a19e;
+}
+
+.accordion-item {
+  border-radius: 12px;
+  overflow: hidden;
+}

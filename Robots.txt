@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /css/
+Disallow: /js/
+Disallow: /scss/
+Disallow: /vendor/
+
+Sitemap: https://ikbis.ac.id/one/sitemap.xml
