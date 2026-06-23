@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) new -->
@@ -35,8 +35,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -111,18 +112,6 @@
             <li><a href="#Informasi">Informasi</a></li>
             <li><a href="#brosur">Brosur</a></li>
             <li><a href="#pendaftaran">Pendaftaran</a></li>
-            <!-- <li class="dropdown">
-              <a href="#">
-                <span>Informasi</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li><a href="#berita">Berita</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#galeri">Galeri</a></li>
-                <li><a href="#faq">FAQ</a></li>
-              </ul>
-            </li> -->
             <li><a href="#contact">Kontak</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -138,86 +127,17 @@
     </header>
 
     <main class="main">
-      <!-- Hero Section -->
-      <!-- <section id="hero" class="hero section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row align-items-center">
-            <div
-              class="col-lg-6 order-2 order-lg-1"
-              data-aos="fade-right"
-              data-aos-delay="200"
-            >
-              <div class="hero-content">
-                <h1 class="hero-title">
-                  Creating Digital Experiences That Matter
-                </h1>
-                <p class="hero-description">
-                  We craft beautiful, functional, and meaningful digital
-                  solutions that help businesses connect with their audiences in
-                  authentic ways.
-                </p>
-                <div class="hero-actions">
-                  <a href="#about" class="btn-primary">Start Your Journey</a>
-                  <a
-                    href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                    class="btn-secondary glightbox"
-                  >
-                    <i class="bi bi-play-circle"></i>
-                    <span>Watch Our Story</span>
-                  </a>
-                </div>
-                <div class="hero-stats">
-                  <div class="stat-item">
-                    <span class="stat-number">150+</span>
-                    <span class="stat-label">Projects Completed</span>
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">98%</span>
-                    <span class="stat-label">Client Satisfaction</span>
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Support Available</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-6 order-1 order-lg-2"
-              data-aos="fade-left"
-              data-aos-delay="300"
-            >
-              <div class="hero-visual">
-                <div class="hero-image-wrapper">
-                  <img
-                    src="assets/img/illustration/illustration-15.webp"
-                    class="img-fluid hero-image"
-                    alt="Hero Image"
-                  />
-                  <div class="floating-elements">
-                    <div class="floating-card card-1">
-                      <i class="bi bi-lightbulb"></i>
-                      <span>Innovation</span>
-                    </div>
-                    <div class="floating-card card-2">
-                      <i class="bi bi-award"></i>
-                      <span>Excellence</span>
-                    </div>
-                    <div class="floating-card card-3">
-                      <i class="bi bi-people"></i>
-                      <span>Collaboration</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section id="hero" class="hero section hero-video">
         <!-- Background Video -->
-        <video class="hero-bg-video" autoplay muted loop playsinline>
+        <video
+          class="hero-bg-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="none"
+          poster="assets/ikbis/img/hero.webp"
+        >
           <source src="assets/ikbis/video/Profil.mp4" type="video/mp4" />
         </video>
 
@@ -328,6 +248,8 @@
                     src="assets/ikbis/img/gedung-ikbis-2.jpeg"
                     alt="Gedung IKBIS"
                     class="img-fluid main-visual"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div class="overlay-card">
                     <div class="card-content">
@@ -351,6 +273,8 @@
                         src="assets/ikbis/img/perpus-ikbis.jpeg"
                         alt="Perpustakan"
                         class="img-fluid secondary-img"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div class="col-6">
@@ -358,6 +282,8 @@
                         src="assets/ikbis/img/Praktik.jpeg"
                         alt="Praktik"
                         class="img-fluid secondary-img"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   </div>
@@ -365,51 +291,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="row mt-5">
-            <div class="col-12" data-aos="fade-up" data-aos-delay="400">
-              <div class="features-section">
-                <div class="row gy-4">
-                  <div class="col-md-4">
-                    <div class="feature-box">
-                      <div class="feature-icon">
-                        <i class="bi bi-shield-check"></i>
-                      </div>
-                      <h5>Trusted Security</h5>
-                      <p>
-                        Quis autem vel eum iure reprehenderit qui in ea
-                        voluptate velit esse quam nihil molestiae.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="feature-box">
-                      <div class="feature-icon">
-                        <i class="bi bi-lightning-charge"></i>
-                      </div>
-                      <h5>Fast Performance</h5>
-                      <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit aut fugit sed quia consequuntur.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="feature-box">
-                      <div class="feature-icon">
-                        <i class="bi bi-headset"></i>
-                      </div>
-                      <h5>Expert Support</h5>
-                      <p>
-                        Neque porro quisquam est qui dolorem ipsum quia dolor
-                        sit amet consectetur adipisci velit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </section>
       <!-- /About Section -->
@@ -592,6 +473,8 @@
                           src="assets/ikbis/img/prodi/thumbnail-keperawatan.jpg"
                           alt="Ilmu Keperawatan"
                           class="img-fluid"
+                          loading="lazy"
+                          decoding="async"
                         />
                         <div class="floating-card">
                           <i class="bi bi-graph-up-arrow"></i>
@@ -672,6 +555,8 @@
                           src="assets/ikbis/img/prodi/thumbnail-ners.jpg"
                           alt="Profesi Ners"
                           class="img-fluid"
+                          loading="lazy"
+                          decoding="async"
                         />
                         <div class="floating-card">
                           <i class="bi bi-shield-check"></i>
@@ -752,6 +637,8 @@
                           src="assets/ikbis/img/prodi/thumbnail-gizi.jpg"
                           alt="Gizi"
                           class="img-fluid"
+                          loading="lazy"
+                          decoding="async"
                         />
                         <div class="floating-card">
                           <i class="bi bi-apple"></i>
@@ -831,6 +718,8 @@
                           src="assets/ikbis/img/prodi/thumbnail-kebidanan.jpg"
                           alt="Kebidanan"
                           class="img-fluid"
+                          loading="lazy"
+                          decoding="async"
                         />
                         <div class="floating-card">
                           <i class="bi bi-heart"></i>
@@ -910,6 +799,8 @@
                           src="assets/ikbis/img/prodi/thumbnail-manajemen.jpg"
                           alt="Manajemen"
                           class="img-fluid"
+                          loading="lazy"
+                          decoding="async"
                         />
                         <div class="floating-card">
                           <i class="bi bi-bar-chart"></i>
@@ -989,6 +880,8 @@
                           src="assets/ikbis/img/prodi/thumbnail-akuntansi.jpg"
                           alt="Akuntansi"
                           class="img-fluid"
+                          loading="lazy"
+                          decoding="async"
                         />
                         <div class="floating-card">
                           <i class="bi bi-graph-up"></i>
@@ -1007,257 +900,6 @@
         </div>
       </section>
       <!-- /Features Section -->
-
-      <!-- Features Cards Section -->
-      <!-- <section id="features-cards" class="features-cards section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row g-4">
-            <div class="col-lg-6" data-aos="flip-left" data-aos-delay="100">
-              <div class="feature-card">
-                <div class="icon-box">
-                  <i class="bi bi-shield-lock"></i>
-                </div>
-                <h3>Strategic Business Intelligence</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo. Aenean commodo ligula eget dolor.
-                </p>
-                <ul class="feature-list">
-                  <li>
-                    <i class="bi bi-check-circle"></i> Real-time data analytics
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Automated reporting
-                    systems
-                  </li>
-                </ul>
-                <a href="#" class="read-more"
-                  >Business Solutions <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-
-            <div class="col-lg-6" data-aos="flip-left" data-aos-delay="200">
-              <div class="feature-card">
-                <div class="icon-box">
-                  <i class="bi bi-shield"></i>
-                </div>
-                <h3>Enterprise Security Framework</h3>
-                <p>
-                  Maecenas tempus, tellus eget condimentum rhoncus, sem quam
-                  semper libero, sit amet adipiscing sem neque sed ipsum. Nam
-                  quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                </p>
-                <ul class="feature-list">
-                  <li>
-                    <i class="bi bi-check-circle"></i> Advanced encryption
-                    protocols
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Multi-factor
-                    authentication
-                  </li>
-                </ul>
-                <a href="#" class="read-more"
-                  >Security Details <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="compliance-card">
-                <h4>Cloud Integration</h4>
-                <p class="status in-progress">In Development</p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="compliance-card">
-                <h4>Data Management</h4>
-                <p class="status compliant">Implemented</p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="compliance-card">
-                <h4>Process Automation</h4>
-                <p class="status compliant">Implemented</p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="compliance-card">
-                <h4>AI Solutions</h4>
-                <p class="status planned">Scheduled</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- /Features Cards Section -->
-
-      <!-- Features 2 Section -->
-      <!-- <section id="features-2" class="features-2 section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row g-4">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-app-indicator"></i>
-                </div>
-                <h3>Intuitive Dashboard Interface</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua ut
-                  enim ad minim veniam.
-                </p>
-                <ul class="feature-benefits">
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i> Real-time data
-                    visualization
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i> Customizable widgets
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i> Interactive reports
-                  </li>
-                </ul>
-                <div class="feature-image">
-                  <img
-                    src="assets/img/features/features-1.webp"
-                    alt="Dashboard Interface"
-                    class="img-fluid"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="feature-card highlighted">
-                <div class="feature-icon">
-                  <i class="bi bi-graph-up-arrow"></i>
-                </div>
-                <h3>Advanced Analytics Tools</h3>
-                <p>
-                  Mauris blandit aliquet elit eget tincidunt nibh pulvinar a
-                  cras ultricies ligula sed magna dictum porta mauris blandit
-                  aliquet elit eget tincidunt.
-                </p>
-                <ul class="feature-benefits">
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i> Predictive analysis
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i> Custom reporting
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i> Data exploration
-                  </li>
-                </ul>
-                <div class="feature-image">
-                  <img
-                    src="assets/img/features/features-2.webp"
-                    alt="Analytics Tools"
-                    class="img-fluid"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-shield-check"></i>
-                </div>
-                <h3>Enterprise-Grade Security</h3>
-                <p>
-                  Nulla porttitor accumsan tincidunt praesent sapien massa
-                  convallis a pellentesque nec egestas non nisi proin eget
-                  tortor risus donec sollicitudin.
-                </p>
-                <ul class="feature-benefits">
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i> End-to-end
-                    encryption
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i> Advanced access
-                    control
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i> Compliance
-                    monitoring
-                  </li>
-                </ul>
-                <div class="feature-image">
-                  <img
-                    src="assets/img/features/features-3.webp"
-                    alt="Security Features"
-                    class="img-fluid"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="feature-testimonial"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="row align-items-center">
-              <div class="col-lg-6" data-aos="zoom-in">
-                <div class="testimonial-image">
-                  <img
-                    src="assets/img/features/features-4.webp"
-                    alt="Testimonial"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="testimonial-content">
-                  <div class="quote-icon">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <p>
-                    Curabitur arcu erat accumsan id imperdiet et porttitor at
-                    sem. Vivamus magna justo lacinia eget consectetur sed
-                    convallis at tellus. Curabitur aliquet quam id dui posuere
-                    blandit.
-                  </p>
-                  <div class="testimonial-author">
-                    <h4>Jennifer Austin</h4>
-                    <span>Product Director at TechCorp</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- /Features 2 Section -->
 
       <!-- Call To Action Section -->
       <section id="Informasi" class="call-to-action section dark-background">
@@ -1282,6 +924,8 @@
                   src="assets/img/misc/misc-6.webp"
                   alt="Kolaborasi Kesehatan dan Bisnis"
                   class="img-fluid main-image"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -1380,26 +1024,44 @@
                   src="assets/ikbis/mou/al-irsyad.jpg"
                   class="img-fluid"
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div class="swiper-slide">
-                <img src="assets/ikbis/mou/ami.png" class="img-fluid" alt="" />
+                <img
+                  src="assets/ikbis/mou/ami.png"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <div class="swiper-slide">
                 <img
                   src="assets/ikbis/mou/brawijaya.png"
                   class="img-fluid"
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div class="swiper-slide">
-                <img src="assets/ikbis/mou/BTLK.png" class="img-fluid" alt="" />
+                <img
+                  src="assets/ikbis/mou/BTLK.png"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <div class="swiper-slide">
                 <img
                   src="assets/ikbis/mou/unesa.png"
                   class="img-fluid"
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div class="swiper-slide">
@@ -1407,6 +1069,8 @@
                   src="assets/ikbis/mou/komisi.png"
                   class="img-fluid"
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div class="swiper-slide">
@@ -1414,6 +1078,8 @@
                   src="assets/ikbis/mou/aspetri.jpg"
                   class="img-fluid"
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div class="swiper-slide">
@@ -1421,6 +1087,8 @@
                   src="assets/ikbis/mou/husada.jpg"
                   class="img-fluid"
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -1435,29 +1103,9 @@
             src="assets/ikbis/img/brosur/brosur25.png"
             alt="Brosur Institut Kesehatan dan Bisnis"
             class="img-fluid w-100"
+            loading="lazy"
+            decoding="async"
           />
-
-          <!-- <div
-            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white"
-            style="background: rgba(0, 0, 0, 0.45)"
-          >
-            <h2 class="fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">
-              Brosur Institut Kesehatan dan Bisnis (IKBIS)
-            </h2>
-            <p class="mb-4" data-aos="fade-up" data-aos-delay="200">
-              Temukan informasi lengkap tentang program studi, fasilitas kampus,
-              dan jalur pendaftaran mahasiswa baru.
-            </p>
-            <a
-              href="assets/files/Brosur-IKBIS.pdf"
-              class="btn btn-light btn-lg"
-              target="_blank"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <i class="bi bi-download me-2"></i>Unduh Brosur
-            </a>
-          </div> -->
         </div>
       </section>
 
@@ -1491,6 +1139,8 @@
                     <img
                       src="assets/img/person/person-f-7.webp"
                       alt="Mahasiswa"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div class="client-details">
@@ -1517,7 +1167,12 @@
                 </p>
                 <div class="client-info">
                   <div class="client-image">
-                    <img src="assets/img/person/person-m-7.webp" alt="Alumni" />
+                    <img
+                      src="assets/img/person/person-m-7.webp"
+                      alt="Alumni"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   <div class="client-details">
                     <h3>Fajar Nugraha</h3>
@@ -1543,7 +1198,12 @@
                 </p>
                 <div class="client-info">
                   <div class="client-image">
-                    <img src="assets/img/person/person-f-8.webp" alt="Dosen" />
+                    <img
+                      src="assets/img/person/person-f-8.webp"
+                      alt="Dosen"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   <div class="client-details">
                     <h3>Dr. Laily Astuti, M.Kes</h3>
@@ -1598,7 +1258,12 @@
                 </p>
                 <div class="client-info">
                   <div class="client-image">
-                    <img src="assets/img/person/person-f-9.webp" alt="Alumni" />
+                    <img
+                      src="assets/img/person/person-f-9.webp"
+                      alt="Alumni"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   <div class="client-details">
                     <h3>Clara Yuliani</h3>
@@ -1627,6 +1292,8 @@
                     <img
                       src="assets/img/person/person-m-13.webp"
                       alt="Mahasiswa"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div class="client-details">
@@ -1639,535 +1306,6 @@
           </div>
         </div>
       </section>
-
-      <!-- /Testimonials Section -->
-
-      <!-- Stats Section -->
-      <!-- <section id="stats" class="stats section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <div
-              class="col-lg-8 mx-auto text-center mb-5"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <h3 class="main-headline">
-                Driving Excellence Through Innovation
-              </h3>
-              <p class="main-description">
-                Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse
-                nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla
-                iaculis vitae.
-              </p>
-
-              <div
-                class="achievement-badge"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              >
-                <div class="achievement-content">
-                  <div class="achievement-icon">
-                    <i class="bi bi-trophy-fill"></i>
-                  </div>
-                  <div class="achievement-details">
-                    <div class="achievement-title">Industry Leader</div>
-                    <div class="achievement-subtitle">
-                      Recognized by 85+ industry experts
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="stats-grid">
-            <div class="row g-4">
-              <div
-                class="col-xl-3 col-lg-6 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="stat-item">
-                  <div class="stat-icon">
-                    <i class="bi bi-people-fill"></i>
-                  </div>
-                  <div class="stat-content">
-                    <div class="stat-number">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="285"
-                        data-purecounter-duration="2"
-                        class="purecounter"
-                      ></span
-                      >K+
-                    </div>
-                    <div class="stat-label">Happy Customers</div>
-                    <div class="stat-growth">
-                      <i class="bi bi-arrow-up"></i>
-                      <span>+12% this year</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-xl-3 col-lg-6 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="stat-item featured">
-                  <div class="stat-icon">
-                    <i class="bi bi-graph-up-arrow"></i>
-                  </div>
-                  <div class="stat-content">
-                    <div class="stat-number">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="98.5"
-                        data-purecounter-duration="2"
-                        class="purecounter"
-                      ></span
-                      >%
-                    </div>
-                    <div class="stat-label">Success Rate</div>
-                    <div class="stat-growth">
-                      <i class="bi bi-arrow-up"></i>
-                      <span>+5% improvement</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-xl-3 col-lg-6 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div class="stat-item">
-                  <div class="stat-icon">
-                    <i class="bi bi-award-fill"></i>
-                  </div>
-                  <div class="stat-content">
-                    <div class="stat-number">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="47"
-                        data-purecounter-duration="2"
-                        class="purecounter"
-                      ></span>
-                    </div>
-                    <div class="stat-label">Awards Won</div>
-                    <div class="stat-growth">
-                      <i class="bi bi-arrow-up"></i>
-                      <span>+8 this quarter</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-xl-3 col-lg-6 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <div class="stat-item">
-                  <div class="stat-icon">
-                    <i class="bi bi-globe"></i>
-                  </div>
-                  <div class="stat-content">
-                    <div class="stat-number">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="156"
-                        data-purecounter-duration="2"
-                        class="purecounter"
-                      ></span>
-                    </div>
-                    <div class="stat-label">Global Partners</div>
-                    <div class="stat-growth">
-                      <i class="bi bi-arrow-up"></i>
-                      <span>+23 new partners</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- /Stats Section -->
-
-      <!-- Services Section -->
-      <!-- <section id="services" class="services section">
-        <div class="container section-title" data-aos="fade-up">
-          <span class="description-title">Services</span>
-          <h2>Services</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
-        </div>
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div
-                class="intro-content"
-                data-aos="fade-right"
-                data-aos-delay="100"
-              >
-                <div
-                  class="section-badge mb-3"
-                  data-aos="zoom-in"
-                  data-aos-delay="50"
-                >
-                  <i class="bi bi-star-fill"></i>
-                  <span>WHAT WE DO</span>
-                </div>
-                <h2 class="section-heading mb-4">
-                  Transforming Ideas into Outstanding Results
-                </h2>
-                <p class="section-description mb-4">
-                  We believe in crafting exceptional experiences that drive
-                  meaningful growth for your business. Our dedicated team
-                  combines creativity with technical excellence to deliver
-                  solutions that make a difference.
-                </p>
-                <a
-                  href="#"
-                  class="cta-button"
-                  data-aos="fade-right"
-                  data-aos-delay="200"
-                >
-                  Explore Our Work
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div
-                class="hero-visual"
-                data-aos="fade-left"
-                data-aos-delay="150"
-              >
-                <img
-                  src="assets/img/services/services-1.webp"
-                  alt="Services"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="services-grid mt-5">
-            <div class="row g-4">
-              <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="service-card">
-                  <div class="card-number">
-                    <span>01</span>
-                  </div>
-                  <div class="card-content">
-                    <h5 class="service-title">
-                      <a href="#">Custom Application Development</a>
-                    </h5>
-                    <p class="service-description">
-                      Building robust applications tailored to your specific
-                      needs using modern frameworks and cutting-edge
-                      technologies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="service-card">
-                  <div class="card-number">
-                    <span>02</span>
-                  </div>
-                  <div class="card-content">
-                    <h5 class="service-title">
-                      <a href="#">Strategic Planning</a>
-                    </h5>
-                    <p class="service-description">
-                      Comprehensive roadmaps that align technology solutions
-                      with your business objectives and market opportunities.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div class="service-card">
-                  <div class="card-number">
-                    <span>03</span>
-                  </div>
-                  <div class="card-content">
-                    <h5 class="service-title">
-                      <a href="#">Identity Design</a>
-                    </h5>
-                    <p class="service-description">
-                      Creating compelling visual narratives that resonate with
-                      your audience and strengthen brand recognition across all
-                      touchpoints.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="service-card">
-                  <div class="card-number">
-                    <span>04</span>
-                  </div>
-                  <div class="card-content">
-                    <h5 class="service-title">
-                      <a href="#">Digital Marketing</a>
-                    </h5>
-                    <p class="service-description">
-                      Maximizing your online presence through targeted campaigns
-                      that drive engagement and convert visitors into loyal
-                      customers.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="service-card">
-                  <div class="card-number">
-                    <span>05</span>
-                  </div>
-                  <div class="card-content">
-                    <h5 class="service-title">
-                      <a href="#">User Experience Design</a>
-                    </h5>
-                    <p class="service-description">
-                      Crafting intuitive interfaces that prioritize user needs
-                      while delivering seamless interactions across desktop and
-                      mobile platforms.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div class="service-card">
-                  <div class="card-number">
-                    <span>06</span>
-                  </div>
-                  <div class="card-content">
-                    <h5 class="service-title">
-                      <a href="#">Data Intelligence</a>
-                    </h5>
-                    <p class="service-description">
-                      Transforming raw data into actionable insights that inform
-                      strategic decisions and optimize business performance
-                      effectively.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- /Services Section -->
-
-      <!-- Pricing Section -->
-      <!-- <section id="pricing" class="pricing section">
-        <div class="container section-title" data-aos="fade-up">
-          <span class="description-title">Pricing</span>
-          <h2>Pricing</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
-        </div>
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div
-            class="pricing-toggle-container mb-5"
-            data-aos="zoom-in"
-            data-aos-delay="150"
-          >
-            <div
-              class="pricing-toggle d-inline-flex align-items-center gap-3 px-3 py-2 rounded-pill"
-            >
-              <span class="monthly active">Monthly</span>
-              <label class="switch m-0">
-                <input type="checkbox" aria-label="Toggle pricing" />
-                <span class="slider"></span>
-              </label>
-              <span class="yearly">Yearly</span>
-            </div>
-            <p class="hint mt-3 mb-0 small">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-              eiusmod tempor.
-            </p>
-          </div>
-
-          <div class="row gy-4">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <article class="price-card h-100">
-                <div class="card-head">
-                  <span class="badge-title">Starter</span>
-                  <h3 class="title">Lorem Dolor Sit</h3>
-                  <p class="subtitle">
-                    Ut enim ad minim veniam quis nostrud exercitation ullamco
-                    laboris.
-                  </p>
-                  <div class="price-wrap">
-                    <span class="price price-monthly"
-                      ><sup>$</sup>12<span class="period">/mo</span></span
-                    >
-                    <span class="price price-yearly"
-                      ><sup>$</sup>120<span class="period">/yr</span></span
-                    >
-                  </div>
-                </div>
-
-                <ul class="feature-list list-unstyled mb-4">
-                  <li>
-                    <i class="bi bi-check-circle"></i> Lorem ipsum dolor amet
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Consectetur adipiscing
-                    elit
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Sed do eiusmod tempor
-                  </li>
-                  <li class="muted">
-                    <i class="bi bi-dash-circle"></i> Incididunt ut labore
-                  </li>
-                  <li class="muted">
-                    <i class="bi bi-dash-circle"></i> Dolore magna aliqua
-                  </li>
-                </ul>
-
-                <div class="cta">
-                  <a href="#" class="btn btn-choose w-100">Get Started</a>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
-              <article class="price-card featured h-100 position-relative">
-                <div class="ribbon">
-                  <i class="bi bi-star-fill"></i> Popular
-                </div>
-
-                <div class="card-head">
-                  <span class="badge-title">Pro</span>
-                  <h3 class="title">Cras Aenean Quam</h3>
-                  <p class="subtitle">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum.
-                  </p>
-                  <div class="price-wrap">
-                    <span class="price price-monthly"
-                      ><sup>$</sup>29<span class="period">/mo</span></span
-                    >
-                    <span class="price price-yearly"
-                      ><sup>$</sup>290<span class="period">/yr</span></span
-                    >
-                  </div>
-                </div>
-
-                <ul class="feature-list list-unstyled mb-4">
-                  <li>
-                    <i class="bi bi-check-circle"></i> Excepteur sint occaecat
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Cupidatat non proident
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Sunt in culpa qui officia
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Deserunt mollit anim id
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Est laborum commodo
-                  </li>
-                </ul>
-
-                <div class="cta">
-                  <a href="#" class="btn btn-choose w-100">Choose Pro</a>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-              <article class="price-card h-100">
-                <div class="card-head">
-                  <span class="badge-title">Business</span>
-                  <h3 class="title">Porta Parturient</h3>
-                  <p class="subtitle">
-                    Quis autem vel eum iure reprehenderit qui in ea voluptate
-                    velit esse.
-                  </p>
-                  <div class="price-wrap">
-                    <span class="price price-monthly"
-                      ><sup>$</sup>59<span class="period">/mo</span></span
-                    >
-                    <span class="price price-yearly"
-                      ><sup>$</sup>590<span class="period">/yr</span></span
-                    >
-                  </div>
-                </div>
-
-                <ul class="feature-list list-unstyled mb-4">
-                  <li>
-                    <i class="bi bi-check-circle"></i> Quam nihil molestiae
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Consequatur vel illum
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Qui dolorem eum fugiat
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Quis nostrum
-                    exercitationem
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Ullam corporis suscipit
-                  </li>
-                </ul>
-
-                <div class="cta">
-                  <a href="#" class="btn btn-choose w-100">Start Business</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- /Pricing Section -->
 
       <!-- Faq Section -->
       <section id="pendaftaran" class="faq section py-5">
@@ -2611,6 +1749,8 @@
                 alt="IKBIS Logo"
                 class="me-2"
                 style="height: 45px"
+                loading="lazy"
+                decoding="async"
               />
               <span class="sitename fw-bold"
                 >Institut Kesehatan dan Bisnis Surabaya</span
@@ -2681,24 +1821,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="container copyright text-center mt-4 border-top pt-3">
-        <p class="mb-1">
-          © <span>2025</span>
-          <strong class="px-1 sitename"
-            >Institut Kesehatan dan Bisnis Surabaya</strong
-          >. Semua Hak Dilindungi.
-        </p>
-        <div class="credits small">
-          Dikembangkan dengan ❤️ oleh
-          <a
-            href="https://ikbis.ac.id"
-            target="_blank"
-            class="text-decoration-underline text-light"
-            >Tim IKBIS Web</a
-          >
-        </div>
-      </div> -->
     </footer>
 
     <!-- Scroll Top -->
@@ -2775,7 +1897,7 @@
 
         // Tampilkan modal
         const modal = new bootstrap.Modal(
-          document.getElementById("popupPendaftaran")
+          document.getElementById("popupPendaftaran"),
         );
         modal.show();
       }
